@@ -84,11 +84,17 @@ body {
     background-color: var(--green-700);
 }
 
+@media (min-width: 376px) {
+    .product {
+        display: flex;
+    }
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--green-700); 
 }
