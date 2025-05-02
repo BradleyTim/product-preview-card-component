@@ -22,6 +22,66 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--cream);
+}
+
+.product {
+    /* max-width: 350px; */
+}
+
+.product-image img {
+    display:block;
+    aspect-ratio: 1;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.product-details {
+    padding-inline: 1rem;
+}
+
+.product-details .product-category {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-block: 1rem;
+    color: var(--grey);
+    font-size: 16px;
+}
+
+.product-details .product-title {
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-details .product-description {
+    color: var(--grey);
+    font-size: var(--font-size-paragraph);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.add-cart {
+    display: block;
+    background-color: var(--green-500);
+    color: var(--white);
+    font-size: 1.25rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin-block: 1rem;
+    cursor: pointer;
+    transition: background 1s ease-in;
+}
+
+.add-cart:hover {
+    background-color: var(--green-700);
 }
 
 .attribution { 
