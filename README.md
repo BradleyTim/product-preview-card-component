@@ -15,10 +15,10 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/image-product-desktop.jpg)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Product Preview Card Component Site URL](https://product-preview-card-component-nine-zeta.vercel.app/)
 
 ## My process
 
@@ -32,6 +32,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [BradleyTim](https://github.com/BradleyTim)
+- Frontend Mentor - [@BradleTim](https://www.frontendmentor.io/profile/BradleyTim)
+- Twitter - [@OBTGO](https://www.twitter.com/OBTGO)
