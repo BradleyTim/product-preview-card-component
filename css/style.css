@@ -1,5 +1,5 @@
+
 :root {
-    --font-family: 'Montserrat';
     --font-size-paragraph: 14px;
 
     --mobile: 375px;
@@ -11,7 +11,6 @@
     --grey: hsl(228, 12%, 48%);
     --cream: hsl(30, 38%, 92%);
     --white: hsl(0, 0%, 100%);
-
 }
 
 *, *::before, *::after {
@@ -20,8 +19,27 @@
     box-sizing: border-box;
 }
 
+.fraunces {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -29,31 +47,38 @@ body {
 }
 
 .product {
-    /* max-width: 350px; */
+    border-radius: 0.5rem;
+    max-width: 350px;
+    margin-block: 1rem;
+}
+
+.product-image {
+    width: 100%;
+    overflow: hidden;
 }
 
 .product-image img {
     display:block;
-    aspect-ratio: 1;
-    object-fit: cover;
-    overflow: hidden;
+    width: 350px;
+    height: fit-content;
 }
 
 .product-details {
-    padding-inline: 1rem;
+    padding-inline: 2rem;
+    background-color: var(--white);
+    padding-bottom: 2rem;
 }
 
 .product-details .product-category {
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-block: 1rem;
+    padding-block: 2rem;
     color: var(--grey);
     font-size: 16px;
 }
 
 .product-details .product-title {
-    color: #000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--black);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -65,8 +90,27 @@ body {
     margin-bottom: 1rem;
 }
 
+.product-details .product-price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.product-price .price-discounted {
+    color: var(--green-500);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.product-price .price-original {
+    color: var(--grey);
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
 .add-cart {
     display: block;
+    width: 100%;
     background-color: var(--green-500);
     color: var(--white);
     font-size: 1.25rem;
@@ -87,12 +131,19 @@ body {
 @media (min-width: 376px) {
     .product {
         display: flex;
+        max-width: 700px;
     }
+
+    .product-image, .product-details {
+        flex: 1;
+    }
+
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    margin-block: 1rem;
 }
 
 .attribution a { 
