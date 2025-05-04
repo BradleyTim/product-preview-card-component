@@ -17,7 +17,10 @@
 <body>
   <section class="product">
     <div class="product-image">
-      <img src="./images/image-product-desktop.jpg" alt="perfume image">
+      <picture>
+        <source media="(min-width: 768px)" srcset="/images/image-product-desktop.jpg">
+        <img src="/images/image-product-mobile.jpg" alt="Perfume Image">
+      </picture>
     </div>
     <div class="product-details">
       <h2 class="product-category">Perfume</h2>
